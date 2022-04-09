@@ -1,1 +1,1 @@
-# SI_2022_lab1_203053
+Borjana Trajkova 203053
