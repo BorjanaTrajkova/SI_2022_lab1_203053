@@ -2,5 +2,9 @@ Milk x 2
 Coffee x 7
 Sugar x 1
 Tomatoes x 5
+<<<<<<< HEAD
 Carrots x 3
 
+=======
+Carrots x 4
+>>>>>>> branch1
