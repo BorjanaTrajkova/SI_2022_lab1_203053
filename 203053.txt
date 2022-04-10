@@ -1,0 +1,104 @@
+3. На GitHub cilck + -> New repository
+4. На Github Code -> HTTPS -> copy url
+   GitBash -> $ git clone + paste url -> поврзување со GitHub account 
+5. $ cd SI_2022_lab1_203053 за да влезам во SI_2022_lab1_203053 директориумот
+   $ touch shopping_list.txt за да креирам нов фајл
+   $ git add shopping_list.txt за да најавам дека ќе додадам содржина 
+   $ git commit -m "Add 5 items to the shopping list" за да ги зачувам промените во мојот локален репозиториум
+6. $ git commit --amend за да направам промена во пораката, бидејќи направив нови промени 
+   "Add quantities to the items"
+7. $ git branch branch1
+   $ git branch branch2 за да креирам две гранки
+8. $ git log за да добијам логови за документација 
+commit 1d52b278bbcfe9b62bb93e7fb811866208f93833 (HEAD -> master, branch2, branch1)
+Author: BorjanaT <85074153+BorjanaT@users.noreply.github.com>
+Date:   Sat Apr 9 23:17:44 2022 +0200
+
+    Add quantities to the items
+
+commit 296f9fc6a93844212aabdc81e03983ccd007ad8d
+Author: BorjanaT <85074153+BorjanaT@users.noreply.github.com>
+Date:   Sat Apr 9 22:56:45 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 2eabd127c0baa3056286d8501e674ddd132f8d2c (origin/master, origin/HEAD)
+Author: BorjanaTrajkova <101569706+BorjanaTrajkova@users.noreply.github.com>
+Date:   Sat Apr 9 21:40:20 2022 +0200
+
+    Update README.md
+
+commit cc698c88ea352fe1d4f8a237be585bf52078e3a7
+Author: BorjanaTrajkova <101569706+BorjanaTrajkova@users.noreply.github.com>
+Date:   Sat Apr 9 21:34:16 2022 +0200
+
+:
+9. $ git pull за да се синхронизира локалниот со оддалечениот репозиториум
+10. $ git checkout branch1 за да се префлам на гранката branch1
+11. $ git add shopping_list.txt за да оди во staging area 
+    $ git commit -m "Change quantity of item #5" за да се додаде на локалниот репозиториум
+12. $ git checkout master за да се префрлам на гранката master
+13. $ git add shopping_list.txt за да оди во staging area 
+    $ git commit -m "Change quantity of item #2" за да се додаде на локалниот репозиториум
+14. $ git pull за да се синхронизира локалниот со оддалечениот репозиториум
+15. $ git checkout branch2 за да се префлам на гранката branch2
+16. $ git add shopping_list.txt за да оди во staging area 
+    $ git commit -m "Modify item #4" за да се додаде на локалниот репозиториум
+17. $ git log
+commit 0c84b0c9acd00fe0b50ade8949ce8073351f5df9 (HEAD -> branch2)
+Author: BorjanaT <85074153+BorjanaT@users.noreply.github.com>
+Date:   Sun Apr 10 00:26:16 2022 +0200
+
+    Modify item #4
+
+commit 1d52b278bbcfe9b62bb93e7fb811866208f93833
+Author: BorjanaT <85074153+BorjanaT@users.noreply.github.com>
+Date:   Sat Apr 9 23:17:44 2022 +0200
+
+    Add quantities to the items
+
+commit 296f9fc6a93844212aabdc81e03983ccd007ad8d
+Author: BorjanaT <85074153+BorjanaT@users.noreply.github.com>
+Date:   Sat Apr 9 22:56:45 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 2eabd127c0baa3056286d8501e674ddd132f8d2c (origin/master, origin/HEAD)
+Author: BorjanaTrajkova <101569706+BorjanaTrajkova@users.noreply.github.com>
+Date:   Sat Apr 9 21:40:20 2022 +0200
+
+    Update README.md
+:
+
+18. $ git add shopping_list.txt
+    $ git commit --amend -m " Modify item #4 and add item #6"
+19. commit d81998aeed71a2e503da062d07969a52f93a07ac (HEAD -> branch2)
+Author: BorjanaT <85074153+BorjanaT@users.noreply.github.com>
+Date:   Sun Apr 10 00:54:57 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 0c84b0c9acd00fe0b50ade8949ce8073351f5df9
+Author: BorjanaT <85074153+BorjanaT@users.noreply.github.com>
+Date:   Sun Apr 10 00:26:16 2022 +0200
+
+    Modify item #4
+
+commit 1d52b278bbcfe9b62bb93e7fb811866208f93833
+Author: BorjanaT <85074153+BorjanaT@users.noreply.github.com>
+Date:   Sat Apr 9 23:17:44 2022 +0200
+
+    Add quantities to the items
+
+commit 296f9fc6a93844212aabdc81e03983ccd007ad8d
+Author: BorjanaT <85074153+BorjanaT@users.noreply.github.com>
+Date:   Sat Apr 9 22:56:45 2022 +0200
+
+    Add 5 items to the shopping list
+
+:
+20. $ git checkout master
+    $ git merge branch1 за да се спои branch1 со master
+Се јавува конфликт.Со $ git diff ги пронаоѓам разликите помеѓу двете датотеки, се разликуваат во количината на вториот и петтиот производ.
+Со командата $ git reset конфликтните датотеки се враќаат во оригиналната состојба.
+   
